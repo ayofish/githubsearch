@@ -4,11 +4,16 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 //custom components
-import { ProfileComponent } from './components/profile.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
     imports: [BrowserModule, HttpModule],
-    declarations: [AppComponent, ProfileComponent],
+    declarations: [
+        AppComponent,
+        NavbarComponent,
+        ProfileComponent
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule {}
